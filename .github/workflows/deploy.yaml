@@ -62,8 +62,8 @@ jobs:
       - name: Deploy to EC2
         run: |
           ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.EC2_KNOWN_HOSTS }} "
-          docker pull saidaloshamsiyev1/for-aws:latest &&
-          docker stop my-app || true &&
-          docker rm my-app || true &&
-          docker run -d --name my-app -p 8080:8080 saidaloshamsiyev1/for-aws:latest
+          sudo docker pull saidaloshamsiyev1/for-aws:latest &&
+          sudo docker stop my-app || true &&
+          sudo docker rm my-app || true &&
+          sudo docker run -d --name my-app -p 8080:8080 saidaloshamsiyev1/for-aws:latest
           "
