@@ -1,8 +1,9 @@
 spring:
   application:
     name: CloudProject
+
   datasource:
-    url: jdbc:postgresql://saidalo-db-30.cdas06uya329.eu-north-1.rds.amazonaws.com:5432/saidalo_db
+    url: jdbc:postgresql://saidalo-db-ishla-kasopat.cdas06uya329.eu-north-1.rds.amazonaws.com:5432/saidaloDb
     username: postgres
     password: b30pdp1234
   jpa:
@@ -13,4 +14,5 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
-
+server:
+  port: 8080

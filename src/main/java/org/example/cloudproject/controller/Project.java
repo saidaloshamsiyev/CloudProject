@@ -1,4 +1,4 @@
-package org.example.cloudproject;
+package org.example.cloudproject.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
