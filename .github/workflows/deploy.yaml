@@ -56,12 +56,12 @@ jobs:
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.AWS_SSH_KEY }}
-          known_hosts: ec2-13-61-27-48.eu-north-1.compute.amazonaws.com
+          known_hosts: ${{ secrets.EC2_KNOWN_HOSTS }}
 
       # Step 3: Deploy to EC2
       - name: Deploy to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@ec2-13-61-27-48.eu-north-1.compute.amazonaws.com "
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_KNOWN_HOSTS }}"
           docker pull saidaloshamsiyev1/for-aws:latest &&
           docker stop my-app || true &&
           docker rm my-app || true &&
