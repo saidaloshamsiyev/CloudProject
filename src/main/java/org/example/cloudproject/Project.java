@@ -12,4 +12,5 @@ public class Project {
     public String behzod() {
         return "yoshla baxtli bosin ";
     }
+    /*dd*/
 }
