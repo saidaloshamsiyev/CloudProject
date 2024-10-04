@@ -2,16 +2,14 @@ package org.example.cloudproject;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/behzodvsrayxona")
 public class Project {
 
 
-    @GetMapping("/bahtli/bolila")
+    @GetMapping()
     public String behzod() {
-        return "yoshla baxtli bosin Api";
+        return "yoshla baxtli bosin ";
     }
 }
