@@ -14,7 +14,7 @@ public class AwsFileUpload {
 
         String bucketName = "saidalo-bucket-two";
         String accessKey = "AKIAXTORPGGI52FBP5TA";
-        String filePath = "";
+        String filePath = "D:\\ProjectsZipFayl\\microservice\\CloudProject\\src\\main\\resources";
 
 
         Region region = Region.US_EAST_1;
